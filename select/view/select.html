@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>下拉框</title>
+    <link rel="stylesheet" href="../css/select.css">
+</head>
+<body>
+    <div class="select">
+        <div class="select_content">
+            <input type="text"/> <i class="icon_arrow_down"></i>
+        </div>
+        <div class="select_list">
+            <div class="search"><input type="text"/> <i class="icon_searh"></i></div>
+            <div class="select_list_content">
+                <ul>
+                    <li>ceshi1</li>
+                    <li>ceshi1</li>
+                    <li>ceshi1</li>
+                    <li>ceshi1</li>
+                    <li>ceshi1</li>
+                    <li>ceshi1</li>
+                    <li>ceshi1</li>
+                    <li>ceshi1</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<script src="../../node_modules/jquery/dist/jquery.js"></script>
+<script src="../js/select.js"></script>
+<script>
+    $.ajax({
+        method:"GET",
+        url:"../data/list.json",
+        success:function(data){
+//            console.log(data)
+        }
+    })
+</script>
+</body>
+</html>
